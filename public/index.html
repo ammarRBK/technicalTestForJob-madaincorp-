@@ -43,6 +43,7 @@
             <h1>Welcome {{user.name}}</h1>
             <!-- change the button posission for UI/UX -->
             <button ng-hide="newPasswordMode" ng-click= "showpasswordChanger()">Change Password</button>
+            <button ng-hide="newEmailMode" ng-click= "showemailChanger()">Change E-mail</button>
         </div>
 
             <div ng-show="newPasswordMode">
@@ -50,6 +51,13 @@
                 <input type="password" id="newPassword" ng-model="newPassword" placeholder="New Password">
                 <!-- after click on change the password the server will redirect the user to login page -->
                 <button ng-click= "chngePassword(newPassword)">Change</button>
+            </div>
+            <!-- for the new feature that the user can change the email -->
+            <div ng-show="newEmailMode">
+                <label for="newPassword">New E-mail</label>
+                <input type="text" id="newPassword" ng-model="newEmail" placeholder="New Email">
+                <!-- after click on change the email the server will redirect the user to login page -->
+                <button ng-click= "chngeEmail(newEmail)">Change</button>
             </div>
     </div>
   </center>

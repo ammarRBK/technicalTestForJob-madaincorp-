@@ -47,7 +47,7 @@ app.post('/api/login', function (req, res) {
 });
 
 //change password route
-app.post('/api/change',function(req,res){
+app.post('/api/changePassword',function(req,res){
     if(req.body.newPassword){
         //change the pass variable to the newPassord
         pass = req.body.newPassword;
