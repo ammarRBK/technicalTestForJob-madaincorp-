@@ -1,5 +1,6 @@
 
 loginApp.controller('loginCtrl',['$scope','$http',($scope,$http) => {
+	
 
     $scope.login= () =>
     {
@@ -20,6 +21,10 @@ loginApp.controller('loginCtrl',['$scope','$http',($scope,$http) => {
 			console.log('you can not change the password',err);
 		})
 
-		$http.get('/api/login');
+	}
+
+//show and hide change password button
+	$scope.showpasswordChanger = () => {
+		$scope.newPasswordMode = true;
 	}
 }]);

@@ -18,7 +18,8 @@
 
 </head>
 <body>
- <cen
+    <!-- needs some bootstrap but I do not have a time -->
+ <center>
     <div class="container-fluid" ng-controller="loginCtrl">
         <div class="panel panel-default" ng-hide="user">
             <div class="panel-heading">Login</div>
@@ -40,8 +41,10 @@
         <div ng-show="user">
             <img src="{{user.profilePic}}"/>
             <h1>Welcome {{user.name}}</h1>
+            <!-- change the button posission for UI/UX -->
+            <button ng-hide="newPasswordMode" ng-click= "showpasswordChanger()">Change Password</button>
         </div>
-        <a href="#" ng-click="newPasswordMode = true" ng-hide="newPasswordMode">Change Password</a>
+
             <div ng-show="newPasswordMode">
                 <label for="newPassword">New Password</label>
                 <input type="password" id="newPassword" ng-model="newPassword" placeholder="New Password">
@@ -49,6 +52,7 @@
                 <button ng-click= "chngePassword(newPassword)">Change</button>
             </div>
     </div>
+  </center>
     <script src="js/app.js"></script>
     <script type="module" src="js/loginCtrl.js"></script>
 </body>
