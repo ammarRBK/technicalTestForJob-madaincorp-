@@ -1,0 +1,19 @@
+Recomendations:
+This is a list of recommendations to make this project better 
+(UI, UX, Performance, Security, Architecture, Bug fix, New Feature, ...etc )
+
+// Please make your recommendations as clear as possible with only a few sentences 
+
+1.UI: the main page after login the problem is with the pecture size and possession showld in the middle of
+the page and full page.
+
+2.UX: after changing password the app showld take the user to login page another time
+to confirm the password or hide the input text because the implementation done.
+
+3.security: there is no sission after signing-in or maybe it is UX.
+
+4.security: the new password did not save after changing it so I can login with
+	old password another time.
+
+5.new featurre: you can also change the email.
+
